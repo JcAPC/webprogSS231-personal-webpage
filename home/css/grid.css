@@ -1,3 +1,8 @@
+.grid-box img {
+    width: 100%; 
+    height: auto; 
+}
+
 .item1 {
     grid-area: header;
   }
