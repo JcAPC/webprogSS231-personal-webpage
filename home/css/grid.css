@@ -1,27 +1,24 @@
-/* Reset some default styles */
-body, h2, p, ul, li {
+/* General Styles */
+body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
 }
 
-/* Body styles */
-body {
-  background-color: #f4f4f4;
-  padding: 20px;
-}
-
-/* Grid container styles */
+/* Grid Container */
 .grid-container {
   display: grid;
   grid-template-areas:
       "header header header header"
-      "about about education course"
-      "it-experience hobbies goals goals";
-  gap: 20px;
+      "about education education course"
+      "it-experience hobbies hobbies goals";
   grid-template-columns: repeat(4, 1fr);
-  background-color: white;
+  gap: 20px;
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #ffffff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -30,42 +27,76 @@ body {
 .header {
   grid-area: header;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
-  padding: 10px 0;
-  border-bottom: 2px solid #ccc;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
 }
 
 /* Sections */
 .about, .education, .course, .it-experience, .hobbies, .goals {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
   padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.about { grid-area: about; }
-.education { grid-area: education; }
-.course { grid-area: course; }
-.it-experience { grid-area: it-experience; }
-.hobbies { grid-area: hobbies; }
-.goals { grid-area: goals; }
+/* Grid Areas */
+.about {
+  grid-area: about;
+}
 
-/* Text styling */
+.education {
+  grid-area: education;
+}
+
+.course {
+  grid-area: course;
+}
+
+.it-experience {
+  grid-area: it-experience;
+}
+
+.hobbies {
+  grid-area: hobbies;
+}
+
+.goals {
+  grid-area: goals;
+}
+
+/* Text Styling */
 h2 {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
+  margin-top: 0;
+  font-size: 1.5rem;
   color: #333;
 }
 
 p, ul {
+  margin: 0;
   font-size: 1rem;
   color: #555;
-  line-height: 1.5;
 }
 
 ul {
   list-style-type: square;
   padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-container {
+      grid-template-areas:
+          "header"
+          "about"
+          "education"
+          "course"
+          "it-experience"
+          "hobbies"
+          "goals";
+      grid-template-columns: 1fr;
+  }
 }
