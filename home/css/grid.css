@@ -1,39 +1,71 @@
-.grid-box img {
-    width: 100%; 
-    height: auto; 
+/* Reset some default styles */
+body, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.item1 {
-    grid-area: header;
-  }
-  .item2 {
-    grid-area: menu;
-  }
-  .item3 {
-    grid-area: main;
-  }
-  .item4 {
-    grid-area: right;
-  }
-  .item5 {
-    grid-area: footer;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-areas:
-      "header header header header header"
-      "menu main main main right"
-      "menu footer footer footer footer";
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  
-  .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-  
+/* Body styles */
+body {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Grid container styles */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+      "header header header header"
+      "about about education course"
+      "it-experience hobbies goals goals";
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Sections */
+.about, .education, .course, .it-experience, .hobbies, .goals {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about { grid-area: about; }
+.education { grid-area: education; }
+.course { grid-area: course; }
+.it-experience { grid-area: it-experience; }
+.hobbies { grid-area: hobbies; }
+.goals { grid-area: goals; }
+
+/* Text styling */
+h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p, ul {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
