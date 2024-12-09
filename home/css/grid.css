@@ -11,8 +11,8 @@ body {
   display: grid;
   grid-template-areas:
       "header header header header"
-      "about education education course"
-      "it-experience hobbies hobbies goals";
+      "about about education education"
+      "course it-experience hobbies goals";
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
@@ -23,7 +23,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Header */
+/* Grid Areas */
 .header {
   grid-area: header;
   text-align: center;
@@ -34,56 +34,52 @@ body {
   border-radius: 8px;
 }
 
-/* Sections */
-.about, .education, .course, .it-experience, .hobbies, .goals {
-  padding: 15px;
-  background-color: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Grid Areas */
 .about {
   grid-area: about;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .education {
   grid-area: education;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .course {
   grid-area: course;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .it-experience {
   grid-area: it-experience;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .hobbies {
   grid-area: hobbies;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .goals {
   grid-area: goals;
-}
-
-/* Text Styling */
-h2 {
-  margin-top: 0;
-  font-size: 1.5rem;
-  color: #333;
-}
-
-p, ul {
-  margin: 0;
-  font-size: 1rem;
-  color: #555;
-}
-
-ul {
-  list-style-type: square;
-  padding-left: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 /* Responsive Design */
