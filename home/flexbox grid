@@ -29,13 +29,13 @@ body {
   /* Main section layout with Flexbox */
   main {
     display: flex;
-    flex-wrap: wrap; /* Enable wrapping for child elements */
-    gap: 20px; /* Space between flex items */
+    flex-wrap: wrap; /* Allows flex items to wrap */
+    gap: 20px; /* Adds space between items */
   }
   
-  /* Main content styling */
   .main-content {
     flex: 3;
+    min-width: 60%; /* Minimum width for wrapping behavior */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -51,6 +51,7 @@ body {
   /* Sidebar styling */
   .sidebar {
     flex: 1;
+    min-width: 30%; /* Minimum width for wrapping behavior */
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -68,7 +69,12 @@ body {
   /* Responsive layout for smaller screens */
   @media (max-width: 768px) {
     main {
-      flex-direction: column; /* Stack items vertically on smaller screens */
+      flex-direction: column; /* Stacks items vertically on small screens */
+    }
+  
+    .main-content,
+    .sidebar {
+      min-width: 100%; /* Ensure both sections take full width */
     }
   }
   
