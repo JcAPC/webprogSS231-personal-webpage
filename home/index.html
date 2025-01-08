@@ -1,88 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Flexbox Grid Example</title>
-    <style>
-      /* Basic styling */
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f9f9f9;
-      }
-      
-      .container {
-        display: flex;
-        flex-direction: column;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
-      
-      header {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-      
-      header h1 {
-        margin: 0;
-      }
-
-      main {
-        display: flex;
-        gap: 20px;
-      }
-      
-      .main-content {
-        flex: 3;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-      }
-      
-      .main-content div {
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: #f7f7f7;
-      }
-
-      .sidebar {
-        flex: 1;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        background-color: #f7f7f7;
-      }
-
-      footer {
-        margin-top: 20px;
-        text-align: center;
-        font-size: 14px;
-        color: #555;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1>Personal Profile</h1>
-      </header>
-      <main>
-        <section class="main-content">
-          <div>With Honors - Senior High</div>
-          <div>BSCS-SS</div>
-          <div>Coding in Python</div>
-          <div>Driving, Playing video games, Watching Movies</div>
-          <div>Sucessful</div>
-        </section>
-        <aside class="sidebar">
-          <h3>Sidebar</h3>
-          <p>Life is meant to be embraced but that means different things on different days.</p>
-        </aside>
-      </main>
-      <footer>Asia Pacific College</footer>
-    </div>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Grid Example</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Personal Profile</h1>
+    </header>
+    <main>
+      <section class="main-content">
+        <div>With Honor</div>
+        <div>BSCS-SS</div>
+        <div>Coding in Python</div>
+        <div>Driving</div>
+        <div>To be Success</div>
+      </section>
+      <aside class="sidebar">
+        <h3>Sidebar</h3>
+        <p>Useful links or additional content can go here.</p>
+      </aside>
+    </main>
+    <footer>Asia Pacific College</footer>
+  </div>
+</body>
 </html>
