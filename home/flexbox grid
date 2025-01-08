@@ -29,7 +29,8 @@ body {
   /* Main section layout with Flexbox */
   main {
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap; /* Enable wrapping for child elements */
+    gap: 20px; /* Space between flex items */
   }
   
   /* Main content styling */
@@ -67,7 +68,7 @@ body {
   /* Responsive layout for smaller screens */
   @media (max-width: 768px) {
     main {
-      flex-direction: column;
+      flex-direction: column; /* Stack items vertically on smaller screens */
     }
   }
   
