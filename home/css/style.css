@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text color */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Dark text color */
+}
+
+.navbar-brand, .nav-link {
+    color: #000000 !important; /* Ensure the links are visible */
+}
+
+/* Hero Section */
+.bg-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg-image .mask {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Cards in About Me Section */
+.card {
+    background-color: #ffffff; /* White background for cards */
+    color: #000000; /* Dark text color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.card .card-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.card i {
+    color: #007bff; /* Blue for icons */
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff; /* White background for footer */
+    color: #000000; /* Dark text color */
+    padding: 1rem 0;
+}
+
+footer a {
+    color: #000000; /* Dark text for footer links */
+}
+
+footer a:hover {
+    color: #007bff; /* Highlight color on hover */
+}
+
+/* Back-to-Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    border-radius: 50%;
+    padding: 10px 15px;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#backToTop:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
